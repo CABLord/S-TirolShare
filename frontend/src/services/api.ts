@@ -70,7 +70,7 @@ export interface Route {
 export interface Station {
     id: string;                // Eindeutiger Identifier
     name: string;              // Name
-    locality: string;          // Ort/Gemeinde
+    locality?: string;          // Ort/Gemeinde
     coords: [number, number] | null; // [latitude, longitude] oder null
     type?: string;             // Typ (optional, z.B. 'stop')
     distance?: number;         // Distanz (optional, für Umkreissuche)
